@@ -1,0 +1,32 @@
+Spark Command: /usr/local/java/jre/bin/java -cp /home/hadoop/spark-2.4.3-bin-hadoop2.7/conf/:/home/hadoop/spark-2.4.3-bin-hadoop2.7/jars/*:/usr/local/hadoop/etc/hadoop/ -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://namenode:7077
+========================================
+2019-09-03 15:30:04,716 INFO worker.Worker: Started daemon with process name: 27625@datanode1
+2019-09-03 15:30:04,724 INFO util.SignalUtils: Registered signal handler for TERM
+2019-09-03 15:30:04,725 INFO util.SignalUtils: Registered signal handler for HUP
+2019-09-03 15:30:04,725 INFO util.SignalUtils: Registered signal handler for INT
+2019-09-03 15:30:05,279 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-09-03 15:30:05,368 INFO spark.SecurityManager: Changing view acls to: hadoop
+2019-09-03 15:30:05,368 INFO spark.SecurityManager: Changing modify acls to: hadoop
+2019-09-03 15:30:05,369 INFO spark.SecurityManager: Changing view acls groups to: 
+2019-09-03 15:30:05,369 INFO spark.SecurityManager: Changing modify acls groups to: 
+2019-09-03 15:30:05,370 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+2019-09-03 15:30:05,702 INFO util.Utils: Successfully started service 'sparkWorker' on port 33146.
+2019-09-03 15:30:05,950 INFO worker.Worker: Starting Spark worker 10.0.0.131:33146 with 1 cores, 1024.0 MB RAM
+2019-09-03 15:30:05,953 INFO worker.Worker: Running Spark version 2.4.3
+2019-09-03 15:30:05,953 INFO worker.Worker: Spark home: /home/hadoop/spark-2.4.3-bin-hadoop2.7
+2019-09-03 15:30:05,996 INFO util.log: Logging initialized @1889ms
+2019-09-03 15:30:06,044 INFO server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2019-09-03 15:30:06,065 INFO server.Server: Started @1959ms
+2019-09-03 15:30:06,086 INFO server.AbstractConnector: Started ServerConnector@4c995dcb{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2019-09-03 15:30:06,086 INFO util.Utils: Successfully started service 'WorkerUI' on port 8081.
+2019-09-03 15:30:06,117 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@97611c6{/logPage,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,119 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@42eaae30{/logPage/json,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,119 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@535ea8e8{/,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,121 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@32db51be{/json,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,129 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@25d7e2fb{/static,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,130 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3675e861{/log,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,132 INFO ui.WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://datanode1:8081
+2019-09-03 15:30:06,140 INFO worker.Worker: Connecting to master namenode:7077...
+2019-09-03 15:30:06,191 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4ab4e7bb{/metrics/json,null,AVAILABLE,@Spark}
+2019-09-03 15:30:06,217 INFO client.TransportClientFactory: Successfully created connection to namenode/10.0.0.130:7077 after 35 ms (0 ms spent in bootstraps)
+2019-09-03 15:30:06,328 INFO worker.Worker: Successfully registered with master spark://namenode:7077
